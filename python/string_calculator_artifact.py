@@ -5,7 +5,9 @@ def add(input_str):
         return 0
 
     try:
-        str_split = input_str.split(",")
+        str_replace = input_str.replace("\n", ",")
+        str_split = str_replace.split(",")
+        
         return sum([int(i) for i in str_split])
 
 
