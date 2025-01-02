@@ -1,10 +1,19 @@
+"""
+This module contains the logic for the string calculator and is represented by two functions:
 
+clean_string = responsible for returning only a string of 
+positive or negative numbers without any other characters.
+
+add = responsible for adding only positive numbers less than 1000. 
+If the number is greater than 1000, it is ignored, and if the number is 
+negative, it throws an error.
+
+"""
 
 def clean_string(input_str):
-   
+
     clean_numbers = []
     current_number = ""
-
 
     for item in input_str:
 
@@ -26,12 +35,12 @@ def clean_string(input_str):
     return cleaned_str
 
 
-def add(input_str):
+def add(numbers):
 
-    if input_str == "":
+    if numbers == "":
         return 0
 
-    split_numbers = input_str.split(",")
+    split_numbers = numbers.split(",")
     int_numbers = [int(num) for num in split_numbers]
 
     if any([num > 1000 for num in int_numbers]):
@@ -44,6 +53,3 @@ def add(input_str):
         raise Exception(f"negatives not allowed: {result}")
 
     return sum(int_numbers)
-
-
-
