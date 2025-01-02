@@ -26,8 +26,6 @@ def clean_string(input_str):
     return cleaned_str
 
 
-
-
 def add(input_str):
 
     if input_str == "":
@@ -35,6 +33,9 @@ def add(input_str):
 
     split_numbers = input_str.split(",")
     int_numbers = [int(num) for num in split_numbers]
+
+    if any([num > 1000 for num in int_numbers]):
+        int_numbers = [num for num in int_numbers if num <= 1000]
 
     if any([num < 0 for num in int_numbers]):
         negative_numbers = [str(num) for num in int_numbers if num < 0]

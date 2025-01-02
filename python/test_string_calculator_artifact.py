@@ -1,5 +1,5 @@
 import unittest
-from main import main as calculator, add
+from main import calculator, add
 
 
 class Test_String_Calculator(unittest.TestCase):
@@ -18,10 +18,12 @@ class Test_String_Calculator(unittest.TestCase):
         self.assertEqual(calculator("2,a3"), 5)
         self.assertEqual(calculator("//;\n1;2"), 3)
         self.assertEqual(calculator("/1,2/;\n3ESTO?ES.UN.STEST'5,2,2"), 15)
-        self.assertEqual(calculator("1520,2,3"), 1525)
+        self.assertEqual(calculator("1520,2,3"), 5)
+        self.assertEqual(calculator("1000,1530,3"), 1003)
         self.assertEqual(calculator("//[***]\n1***8***3"), 12)
         self.assertEqual(calculator("//[*][%]\n1*2%5"), 8)
         self.assertEqual(calculator("//[***][%%]\n1***2%%3"), 6)
+        self.assertEqual(calculator("-1,5,10,-5,-3"), "Exception negatives not allowed: -1, -5, -3")
 
 
 
