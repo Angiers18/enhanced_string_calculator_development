@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("StringCalculator")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67e020f188fa11fb72cd830701eac240067fe266")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84cbf24dcb694ecc74b6c3ccb219e8672a675d4b")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("StringCalculator")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("StringCalculator")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
