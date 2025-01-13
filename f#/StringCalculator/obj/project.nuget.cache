@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RTU4nZS8NZ8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\angie\\Downloads\\enhanced_string_calculator_development\\f#\\StringCalculator\\StringCalculator.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angie\\.nuget\\packages\\fsharp.core\\8.0.403\\fsharp.core.8.0.403.nupkg.sha512"
+  ],
+  "logs": []
+}
