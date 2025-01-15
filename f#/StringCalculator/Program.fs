@@ -7,7 +7,7 @@ open System
 let main argv =
 
     let cleanStr (inputStr: string) : string =
-        let delimiters = ['\n']
+        let delimiters = ['\n' ; '+'; '*'; '/'; ';'; ':'; '['; ']'; '%'; '^'; '&'; '|'; '!'; '?'; '~'; '('; ')'; '{'; '}'; '<'; '>']
         delimiters 
         |> List.fold (fun accumulator delimit -> accumulator.Replace(delimit, ',')) inputStr
 
@@ -18,7 +18,7 @@ let main argv =
             |> Array.filter (fun x -> x <> "") 
             |> Array.map int
             |> Array.sum
-  
+
     0 // return an integer exit code
 
 
