@@ -23,8 +23,13 @@ let main argv =
 
             if negatives.Length > 0 then
                 let negativeString = negatives |> Array.map string |> String.concat ", "
-                failwith ("Negatives not allowed: " + negativeString)
+                failwith ("negatives not allowed: " + negativeString)
             else
+
+                if numbers |> Array.exists (fun x -> x > 1000) then
+                    let numbersLessThan1000 = numbers |> Array.filter (fun x -> x <= 1000)
+                    numbersLessThan1000 |> Array.sum
+                else 
                 numbers |> Array.sum
      with
      | ex -> 
