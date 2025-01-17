@@ -16,8 +16,8 @@ let main argv =
         else
             let numbers =
                 inputStr.Split(',')
-                |> Array.filter (fun x -> x <> "") // Filtrar elementos vacíos
-                |> Array.map int // Convertir a enteros
+                |> Array.filter (fun x -> x <> "")
+                |> Array.map int
 
             let negatives = numbers |> Array.filter (fun x -> x < 0)
 
