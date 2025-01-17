@@ -5,10 +5,10 @@ open System
 
 [<EntryPoint>]
 let main argv =
-    let cleanStr (inputStr: string) : string =
+    let cleanStr (input: string) : string =
         let delimiters = ['\n' ; '+'; '*'; '/'; ';'; ':'; '['; ']'; '%'; '^'; '&'; '|'; '!'; '?'; '~'; '('; ')'; '{'; '}'; '<'; '>' ; '.']
         delimiters 
-        |> List.fold (fun accumulator delimit -> accumulator.Replace(delimit, ',')) inputStr
+        |> List.fold (fun accumulator delimit -> accumulator.Replace(delimit, ',')) input
 
     let add (inputStr: string) : int =
      try
@@ -36,13 +36,5 @@ let main argv =
         printfn "Error: %s" ex.Message
         -1 // Returns -1 in case of error 
 
-    printfn "Enter the numbers to add: example 1,2,3,4,5"
-    let inputStr = Console.ReadLine()
-    printfn "The result of the sum is %d" (add (cleanStr inputStr))  
-    
-
+   
     0 // everything well
-
-    
-    
-    
