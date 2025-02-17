@@ -30,7 +30,7 @@ Clone this repository to your local machine:
 
 Go to the project directory:
  ```bash
-cd /f#/StringCalculator
+cd f#/StringCalculator
  ```
 
 #### Python
